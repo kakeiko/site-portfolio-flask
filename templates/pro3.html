@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/project.css">
+    <title>Site portifólio(Guilherme Dutra)</title>
+</head>
+<body>
+    <section class="projeto">
+        <div class="img">
+            <img src="../static/media/fotos/conversor_OcTPy9N.png" class="img-projeto">
+            <h1 class="titulo">Conversor de temperaturas</h1>
+            <p class="Status">Finalizado</p>
+            <p class="Post">Postado em: 2024-05-04 14:48:23</p>
+            <p class="atualizado">Atualizado em: 2024-05-04 14:48:23</p>
+        </div>
+        <div class="objetivo">
+            <p class="text-objetivo">Essa aplicação faz a conversão de unidades de medida de temperaturas como de celsius para kelvin ou para fahrenheit e assim em diante.</p>
+        </div>
+        <div class="video">
+            <video src="../static/media/video/conersor-de-temperatura_a9LLTbN.mp4" type="mp4" controls="True" class="video-projeto"></video>
+            <a href="https://github.com/kakeiko/conversor-de-temperaturas/blob/main/main.py" class="codigo" target="_blank"><p>Veja o código</p></a>
+            <p class="text-projeto">Aqui se utiliza um mecânica bem parecida com a calculadora, porém focado em conversão.</p>
+        </div>
+    </section>
+    {% endblock %}
